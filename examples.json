@@ -1,0 +1,88 @@
+[
+  {
+    "label": "A 118,4, L 23,5 mm, K 44 D, emetropia: 118,4 − 58,75 − 39,6 = 20,05 D",
+    "input": {
+      "a": 118.4,
+      "al": 23.5,
+      "k": 44
+    },
+    "expected": {
+      "raw": {
+        "pe": 20.05,
+        "p": 20.05,
+        "adj": 0
+      },
+      "level": "info"
+    },
+    "originalInput": {
+      "a": 118.4,
+      "al": 23.5,
+      "k": 44
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Mesmo olho, alvo −0,50 D: 20,05 + 1,25 × 0,5 = 20,68 D",
+    "input": {
+      "a": 118.4,
+      "al": 23.5,
+      "k": 44,
+      "alvo": -0.5
+    },
+    "expected": {
+      "raw": {
+        "p": 20.675
+      }
+    },
+    "originalInput": {
+      "a": 118.4,
+      "al": 23.5,
+      "k": 44,
+      "alvo": -0.5
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Olho curto: L 21,5 mm (+1), K 45: 119,4 − 53,75 − 40,5 = 25,15 D",
+    "input": {
+      "a": 118.4,
+      "al": 21.5,
+      "k": 45
+    },
+    "expected": {
+      "raw": {
+        "pe": 25.15,
+        "adj": 1
+      }
+    },
+    "originalInput": {
+      "a": 118.4,
+      "al": 21.5,
+      "k": 45
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Olho longo: L 28 mm (−0,5), K 42, alvo −0,50: 10,1 D; fator 1,0 (≤ 14 D) → 10,6 D",
+    "input": {
+      "a": 118.4,
+      "al": 28,
+      "k": 42,
+      "alvo": -0.5
+    },
+    "expected": {
+      "raw": {
+        "pe": 10.1,
+        "p": 10.6,
+        "adj": -0.5
+      }
+    },
+    "originalInput": {
+      "a": 118.4,
+      "al": 28,
+      "k": 42,
+      "alvo": -0.5
+    },
+    "expandedZeroOptions": []
+  }
+]

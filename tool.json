@@ -1,0 +1,205 @@
+{
+  "tool": {
+    "id": "lente-intraocular-srk-ii",
+    "title": "Fórmula SRK II (lente intraocular)",
+    "short": "Poder da LIO pela fórmula SRK II (didático)",
+    "desc": "Fórmula SRK II para o poder da lente intraocular pelo comprimento axial, ceratometria e constante A: ferramenta didática, não para planejamento cirúrgico.",
+    "lead": "Ilustra como o comprimento axial, a ceratometria e a constante A determinam o poder da lente intraocular na cirurgia de catarata. Uso didático.",
+    "spec": [
+      "oftalmologia"
+    ],
+    "fields": [
+      [
+        "a",
+        "Constante A da lente",
+        "num",
+        {
+          "min": 110,
+          "max": 125,
+          "step": 0.1,
+          "ph": "118,4"
+        }
+      ],
+      [
+        "al",
+        "Comprimento axial",
+        "num",
+        {
+          "min": 15,
+          "max": 40,
+          "step": 0.01,
+          "unit": "mm",
+          "ph": "23,5"
+        }
+      ],
+      [
+        "k",
+        "Ceratometria média (K)",
+        "num",
+        {
+          "min": 30,
+          "max": 60,
+          "step": 0.01,
+          "unit": "D",
+          "ph": "44"
+        }
+      ],
+      [
+        "alvo",
+        "Refração pós-operatória desejada",
+        "num",
+        {
+          "min": -6,
+          "max": 3,
+          "step": 0.25,
+          "unit": "D",
+          "ph": "0",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>SRK II</strong>: P<sub>emetropia</sub> = A<sub>1</sub> − 2,5 × L − 0,9 × K, em que A<sub>1</sub> é a constante A ajustada pelo comprimento axial L: +3 (L &lt; 20 mm), +2 (20 a 20,99), +1 (21 a 21,99), 0 (22 a 24,49) e −0,5 (≥ 24,5 mm).</p><p>Para uma refração-alvo R: P = P<sub>emetropia</sub> − 1,25 × R (se P<sub>emetropia</sub> &gt; 14 D) ou P<sub>emetropia</sub> − R (se ≤ 14 D).</p>",
+    "table": [
+      [
+        "Comprimento axial",
+        "Ajuste da constante A"
+      ],
+      [
+        "&lt; 20 mm",
+        "+3,0 D"
+      ],
+      [
+        "20 a 20,99 mm",
+        "+2,0 D"
+      ],
+      [
+        "21 a 21,99 mm",
+        "+1,0 D"
+      ],
+      [
+        "22 a 24,49 mm",
+        "0"
+      ],
+      [
+        "≥ 24,5 mm",
+        "−0,5 D"
+      ]
+    ],
+    "table_note": "Fórmula de regressão de 2ª geração (1988), mostrada pelo valor didático. Para olhos ≥ 24,5 mm, a maioria das reproduções usa −0,5 D; algumas (Dang e Raj, 1989) citam −1,0 D.",
+    "tips": [
+      "<strong>Não use para escolher a lente</strong>: o planejamento atual usa biometria óptica e fórmulas como Barrett Universal II, Kane, Hill-RBF, Haigis ou SRK/T, com constantes otimizadas.",
+      "Note o peso dos dados: erro de 1 mm no comprimento axial muda a lente em cerca de 2,5 D; erro de 1 D na ceratometria, em cerca de 0,9 D.",
+      "Olhos curtos (&lt; 22 mm), longos (&gt; 24,5 mm) e pós-cirurgia refrativa são onde as fórmulas de regressão mais erram.",
+      "A constante A é específica de cada modelo de lente e do método de biometria; use a otimizada (ULIB/IOLCon) sempre que possível."
+    ],
+    "sources": [
+      [
+        "Sanders DR, Retzlaff J, Kraff MC. Comparison of the SRK II formula and other second generation formulas. J Cataract Refract Surg, 1988.",
+        "https://doi.org/10.1016/S0886-3350(88)80087-7"
+      ]
+    ],
+    "cases": [
+      [
+        "A 118,4, L 23,5 mm, K 44 D, emetropia: 118,4 − 58,75 − 39,6 = 20,05 D",
+        {
+          "a": 118.4,
+          "al": 23.5,
+          "k": 44
+        },
+        {
+          "raw": {
+            "pe": 20.05,
+            "p": 20.05,
+            "adj": 0
+          },
+          "level": "info"
+        }
+      ],
+      [
+        "Mesmo olho, alvo −0,50 D: 20,05 + 1,25 × 0,5 = 20,68 D",
+        {
+          "a": 118.4,
+          "al": 23.5,
+          "k": 44,
+          "alvo": -0.5
+        },
+        {
+          "raw": {
+            "p": 20.675
+          }
+        }
+      ],
+      [
+        "Olho curto: L 21,5 mm (+1), K 45: 119,4 − 53,75 − 40,5 = 25,15 D",
+        {
+          "a": 118.4,
+          "al": 21.5,
+          "k": 45
+        },
+        {
+          "raw": {
+            "pe": 25.15,
+            "adj": 1
+          }
+        }
+      ],
+      [
+        "Olho longo: L 28 mm (−0,5), K 42, alvo −0,50: 10,1 D; fator 1,0 (≤ 14 D) → 10,6 D",
+        {
+          "a": 118.4,
+          "al": 28,
+          "k": 42,
+          "alvo": -0.5
+        },
+        {
+          "raw": {
+            "pe": 10.1,
+            "p": 10.6,
+            "adj": -0.5
+          }
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "id": "lente-intraocular-srk-ii",
+    "status": "restricted",
+    "reason": "O próprio ZIP declara uso didático e descreve versões divergentes de um ajuste. A saída em dioptrias é uma escolha de implante se reutilizada clinicamente. Suspender cálculo operacional e preservar histórico; NICE recomenda fórmulas por biometria, diferentes de SRK II.",
+    "sourceUrl": "https://www.nice.org.uk/guidance/ng77/chapter/recommendations",
+    "sourceTitle": "NICE NG77 — Cataracts in adults, biometry",
+    "sourceDate": "2017; vigilância 2025",
+    "publisherRegion": "Reino Unido / NICE",
+    "checkedAt": "2026-09-25",
+    "clinicalValidation": "not-performed",
+    "reviewScope": "triagem por risco e finalidade da saída principal; sem validação clínica",
+    "suppressLegacyFormula": true,
+    "formulaOverride": "SRK II é uma fórmula histórica de regressão para poder de lente intraocular. Manter para estudo da evolução das fórmulas; não liberar como planejamento cirúrgico."
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}
