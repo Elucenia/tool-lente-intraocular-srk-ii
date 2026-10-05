@@ -1,10 +1,11 @@
 {
   "tool": {
     "id": "lente-intraocular-srk-ii",
-    "title": "Fórmula SRK II (lente intraocular)",
-    "short": "Poder da LIO pela fórmula SRK II (didático)",
-    "desc": "Fórmula SRK II para o poder da lente intraocular pelo comprimento axial, ceratometria e constante A: ferramenta didática, não para planejamento cirúrgico.",
-    "lead": "Ilustra como o comprimento axial, a ceratometria e a constante A determinam o poder da lente intraocular na cirurgia de catarata. Uso didático.",
+    "title": "SRK II: modelo histórico didático",
+    "short": "Cálculo histórico da fórmula SRK II; não seleciona um implante",
+    "desc": "Explora a fórmula SRK II de 1988 e os seus ajustes documentados. Esta implementação didática não seleciona uma lente para cirurgia nem substitui biometria e constantes modernas.",
+    "lead": "Explora a fórmula SRK II de 1988 e os seus ajustes documentados. Esta implementação didática não seleciona uma lente para cirurgia nem substitui biometria e constantes modernas.",
+    "kind": "Calculadora",
     "spec": [
       "oftalmologia"
     ],
@@ -56,43 +57,25 @@
           "ph": "0",
           "opt": true
         }
+      ],
+      [
+        "contexto",
+        "Uso histórico/didático da fórmula SRK II, sem selecionar um implante para cirurgia?",
+        "sel",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
       ]
     ],
-    "formula": "<p><strong>SRK II</strong>: P<sub>emetropia</sub> = A<sub>1</sub> − 2,5 × L − 0,9 × K, em que A<sub>1</sub> é a constante A ajustada pelo comprimento axial L: +3 (L &lt; 20 mm), +2 (20 a 20,99), +1 (21 a 21,99), 0 (22 a 24,49) e −0,5 (≥ 24,5 mm).</p><p>Para uma refração-alvo R: P = P<sub>emetropia</sub> − 1,25 × R (se P<sub>emetropia</sub> &gt; 14 D) ou P<sub>emetropia</sub> − R (se ≤ 14 D).</p>",
-    "table": [
-      [
-        "Comprimento axial",
-        "Ajuste da constante A"
-      ],
-      [
-        "&lt; 20 mm",
-        "+3,0 D"
-      ],
-      [
-        "20 a 20,99 mm",
-        "+2,0 D"
-      ],
-      [
-        "21 a 21,99 mm",
-        "+1,0 D"
-      ],
-      [
-        "22 a 24,49 mm",
-        "0"
-      ],
-      [
-        "≥ 24,5 mm",
-        "−0,5 D"
-      ]
-    ],
-    "table_note": "Fórmula de regressão de 2ª geração (1988), mostrada pelo valor didático. Para olhos ≥ 24,5 mm, a maioria das reproduções usa −0,5 D; algumas (Dang e Raj, 1989) citam −1,0 D.",
-    "tips": [
-      "<strong>Não use para escolher a lente</strong>: o planejamento atual usa biometria óptica e fórmulas como Barrett Universal II, Kane, Hill-RBF, Haigis ou SRK/T, com constantes otimizadas.",
-      "Note o peso dos dados: erro de 1 mm no comprimento axial muda a lente em cerca de 2,5 D; erro de 1 D na ceratometria, em cerca de 0,9 D.",
-      "Olhos curtos (&lt; 22 mm), longos (&gt; 24,5 mm) e pós-cirurgia refrativa são onde as fórmulas de regressão mais erram.",
-      "A constante A é específica de cada modelo de lente e do método de biometria; use a otimizada (ULIB/IOLCon) sempre que possível."
-    ],
+    "formula": "<p>P = A ajustado − 2,5 L − 0,9 K. Ajuste A: +3 se L &lt; 20; +2 se L &lt; 21; +1 se L &lt; 22; 0 se L &lt; 24,5; −0,5 nos demais. Refração-alvo: subtrair R × 1,25 se P &gt; 14, ou R se P ≤ 14.</p>",
     "sources": [
+      [
+        "Echo-Son · manual PIROP PAB33 rev.9 · 2020 · seção 10.2",
+        "https://3boptic.com/manuales/PIROP_UserManual_PAB33_9_1.pdf"
+      ],
       [
         "Sanders DR, Retzlaff J, Kraff MC. Comparison of the SRK II formula and other second generation formulas. J Cataract Refract Surg, 1988.",
         "https://doi.org/10.1016/S0886-3350(88)80087-7"
@@ -100,97 +83,464 @@
     ],
     "cases": [
       [
-        "A 118,4, L 23,5 mm, K 44 D, emetropia: 118,4 − 58,75 − 39,6 = 20,05 D",
-        {
-          "a": 118.4,
-          "al": 23.5,
-          "k": 44
-        },
-        {
-          "raw": {
-            "pe": 20.05,
-            "p": 20.05,
-            "adj": 0
-          },
-          "level": "info"
-        }
-      ],
-      [
-        "Mesmo olho, alvo −0,50 D: 20,05 + 1,25 × 0,5 = 20,68 D",
+        "Vetor sintético principal de referência",
         {
           "a": 118.4,
           "al": 23.5,
           "k": 44,
-          "alvo": -0.5
+          "alvo": -1,
+          "contexto": "1"
         },
         {
           "raw": {
-            "p": 20.675
-          }
+            "pe": 20.05,
+            "p": 21.3,
+            "adj": 0,
+            "factor": 1.25
+          },
+          "main": "21,30",
+          "tol": 1e-9
         }
       ],
       [
-        "Olho curto: L 21,5 mm (+1), K 45: 119,4 − 53,75 − 40,5 = 25,15 D",
+        "Faixaaxial19.99",
         {
           "a": 118.4,
-          "al": 21.5,
-          "k": 45
+          "al": 19.99,
+          "k": 44,
+          "alvo": 0,
+          "contexto": "1"
         },
         {
           "raw": {
-            "pe": 25.15,
-            "adj": 1
-          }
+            "adj": 3,
+            "pe": 31.825,
+            "p": 31.825,
+            "factor": 1.25
+          },
+          "tol": 1e-9
         }
       ],
       [
-        "Olho longo: L 28 mm (−0,5), K 42, alvo −0,50: 10,1 D; fator 1,0 (≤ 14 D) → 10,6 D",
+        "Faixaaxial20",
         {
           "a": 118.4,
-          "al": 28,
-          "k": 42,
-          "alvo": -0.5
+          "al": 20,
+          "k": 44,
+          "alvo": 0,
+          "contexto": "1"
         },
         {
           "raw": {
-            "pe": 10.1,
-            "p": 10.6,
-            "adj": -0.5
-          }
+            "adj": 2,
+            "pe": 30.8,
+            "p": 30.8,
+            "factor": 1.25
+          },
+          "tol": 1e-9
+        }
+      ],
+      [
+        "Faixaaxial21",
+        {
+          "a": 118.4,
+          "al": 21,
+          "k": 44,
+          "alvo": 0,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "adj": 1,
+            "pe": 27.3,
+            "p": 27.3,
+            "factor": 1.25
+          },
+          "tol": 1e-9
+        }
+      ],
+      [
+        "Faixaaxial22",
+        {
+          "a": 118.4,
+          "al": 22,
+          "k": 44,
+          "alvo": 0,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "adj": 0,
+            "pe": 23.8,
+            "p": 23.8,
+            "factor": 1.25
+          },
+          "tol": 1e-9
+        }
+      ],
+      [
+        "Faixaaxial24.5",
+        {
+          "a": 118.4,
+          "al": 24.5,
+          "k": 44,
+          "alvo": 0,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "adj": -0.5,
+            "pe": 17.05,
+            "p": 17.05,
+            "factor": 1.25
+          },
+          "tol": 1e-9
+        }
+      ],
+      [
+        "Exemplo estudo1992 olho longo29/constante116,8",
+        {
+          "a": 116.8,
+          "al": 29,
+          "k": 44,
+          "alvo": 0,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "adj": -0.5,
+            "pe": 4.2,
+            "p": 4.2,
+            "factor": 1
+          },
+          "main": "4,20",
+          "tol": 1e-9
+        }
+      ],
+      [
+        "P de 18 D usa fator 1,25",
+        {
+          "a": 114,
+          "al": 24,
+          "k": 40,
+          "alvo": -2,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "adj": 0,
+            "pe": 18,
+            "p": 20.5,
+            "factor": 1.25
+          },
+          "tol": 1e-9
+        }
+      ],
+      [
+        "Pexatamente14 usa fator1 (A110, L24, K40)",
+        {
+          "a": 110,
+          "al": 24,
+          "k": 40,
+          "alvo": -2,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "pe": 14,
+            "p": 16,
+            "factor": 1
+          },
+          "main": "16,00"
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
-      "testedAt": "2026-09-25",
-      "total": 4,
-      "passed": 4,
-      "failures": []
+      "testedAt": "2026-10-03",
+      "total": 9,
+      "passed": 9,
+      "failures": [],
+      "evidencePath": "reports/review-20261003/restored-methods-source-rules.json",
+      "scope": "Synthetic source-rule arithmetic checks. Independent clinical validation not performed."
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
-    }
-  },
-  "review": {
-    "id": "lente-intraocular-srk-ii",
-    "status": "restricted",
-    "reason": "O próprio ZIP declara uso didático e descreve versões divergentes de um ajuste. A saída em dioptrias é uma escolha de implante se reutilizada clinicamente. Suspender cálculo operacional e preservar histórico; NICE recomenda fórmulas por biometria, diferentes de SRK II.",
-    "sourceUrl": "https://www.nice.org.uk/guidance/ng77/chapter/recommendations",
-    "sourceTitle": "NICE NG77 — Cataracts in adults, biometry",
-    "sourceDate": "2017; vigilância 2025",
-    "publisherRegion": "Reino Unido / NICE",
-    "checkedAt": "2026-09-25",
+      "status": "passed",
+      "testedAt": "2026-10-03",
+      "total": 31,
+      "passed": 31,
+      "evidencePath": "reports/review-20261003/restored-methods-source-rules.json",
+      "scope": "Independent expected values and source-rule boundary checks; not clinical approval.",
+      "sourceRowCount": 31,
+      "uniqueApiInputCount": 28,
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "audit": {
+          "file": "reports/review-20261003/independent-source-corpus-input-identity-audit-final25.json",
+          "sha256": "35d65e84c5608a5f572fce6837f0a8c101b2266f5d6eec32a3d60d2bb6b022ca"
+        },
+        "sourceRows": 31,
+        "uniqueApiInputs": 28,
+        "duplicateRows": 3,
+        "duplicates": [
+          {
+            "first": 11,
+            "repeat": 14,
+            "input": {
+              "a": null,
+              "al": 23.5,
+              "k": 44,
+              "alvo": -1,
+              "contexto": "1"
+            }
+          },
+          {
+            "first": 16,
+            "repeat": 19,
+            "input": {
+              "a": 118.4,
+              "al": null,
+              "k": 44,
+              "alvo": -1,
+              "contexto": "1"
+            }
+          },
+          {
+            "first": 21,
+            "repeat": 24,
+            "input": {
+              "a": 118.4,
+              "al": 23.5,
+              "k": null,
+              "alvo": -1,
+              "contexto": "1"
+            }
+          }
+        ],
+        "coverageStatusUnchanged": true
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "limits": "Modelo histórico com precisão limitada, especialmente em olhos curtos e longos. Não integra biometria ou constantes otimizadas modernas e não seleciona uma lente para cirurgia.",
+    "methodVersion": "SRK II 1988; implementação histórica didática",
+    "currentMethodSource": {
+      "title": "Echo-Son · manual PIROP PAB33 rev.9 · 2020 · seção 10.2",
+      "url": "https://3boptic.com/manuales/PIROP_UserManual_PAB33_9_1.pdf",
+      "version": "SRK II 1988; implementação histórica didática",
+      "checkedAt": "2026-10-03",
+      "access": "manufacturer-manual-copy"
+    },
+    "primaryVerification": {
+      "url": "https://3boptic.com/manuales/PIROP_UserManual_PAB33_9_1.pdf",
+      "checked": "Manual do fabricante Echo-Son PIROP, PAB33 revisão 9, março de 2020, página 10-87: cinco faixas de comprimento axial; fator 1,25 quando a potência emetrópica é maior que 14 D e fator 1 nos demais casos. Modelo SRK II de 1988 identificado como histórico e didático.",
+      "access": "manufacturer-manual-copy"
+    },
     "clinicalValidation": "not-performed",
-    "reviewScope": "triagem por risco e finalidade da saída principal; sem validação clínica",
-    "suppressLegacyFormula": true,
-    "formulaOverride": "SRK II é uma fórmula histórica de regressão para poder de lente intraocular. Manter para estudo da evolução das fórmulas; não liberar como planejamento cirúrgico."
+    "languageReview": "not-performed",
+    "reviewStatus": "needs-review",
+    "implementationStatus": "available",
+    "versionEvidence": {
+      "status": "explicit-implemented-variant-and-existing-source-proofs-recorded",
+      "checkedAt": "2026-10-04T17:52:09.841Z",
+      "declaredMethodVersion": "SRK II 1988; implementação histórica didática",
+      "implementedVariant": "P = A ajustado − 2,5 L − 0,9 K. Ajuste A: +3 se L < 20; +2 se L < 21; +1 se L < 22; 0 se L < 24,5; −0,5 nos demais. Refração-alvo: subtrair R × 1,25 se P > 14, ou R se P ≤ 14.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "a",
+            "label": "Constante A da lente",
+            "type": "num",
+            "min": 110,
+            "max": 125,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "al",
+            "label": "Comprimento axial",
+            "type": "num",
+            "min": 15,
+            "max": 40,
+            "unit": "mm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "k",
+            "label": "Ceratometria média (K)",
+            "type": "num",
+            "min": 30,
+            "max": 60,
+            "unit": "D",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "alvo",
+            "label": "Refração pós-operatória desejada",
+            "type": "num",
+            "min": -6,
+            "max": 3,
+            "unit": "D",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "contexto",
+            "label": "Uso histórico/didático da fórmula SRK II, sem selecionar um implante para cirurgia?",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          }
+        ],
+        "hash": "fe042b83d4ed0ad84761b674784e958ee18ea70f6f86721cf85ddf7ea165de27",
+        "hashInputDefinition": "SHA256 of UTF8 JSON.stringify({id:tool.id,fields:tool.fields,formula:tool.formula,config:tool.config||null}), preserving declared order/value types; not a hash of versionEvidence.inputContract.fields display projection."
+      },
+      "sourceEditions": [
+        {
+          "citation": "Echo-Son · manual PIROP PAB33 rev.9 · 2020 · seção 10.2",
+          "url": "https://3boptic.com/manuales/PIROP_UserManual_PAB33_9_1.pdf",
+          "class": "existing-source-record-transcribed",
+          "declaredCitationPreserved": true,
+          "sourceIdentityRecheckedInThisNormalization": false,
+          "publicationEditionConfirmationInThisNormalization": "not-performed",
+          "fullTextRetrievalInThisNormalization": false,
+          "formulaConformance": "not-assessed"
+        },
+        {
+          "citation": "Sanders DR, Retzlaff J, Kraff MC. Comparison of the SRK II formula and other second generation formulas. J Cataract Refract Surg, 1988.",
+          "url": "https://doi.org/10.1016/S0886-3350(88)80087-7",
+          "class": "existing-source-record-transcribed",
+          "declaredCitationPreserved": true,
+          "sourceIdentityRecheckedInThisNormalization": false,
+          "publicationEditionConfirmationInThisNormalization": "not-performed",
+          "fullTextRetrievalInThisNormalization": false,
+          "formulaConformance": "not-assessed"
+        }
+      ],
+      "existingSourceEvidence": {
+        "currentMethodSource": {
+          "title": "Echo-Son · manual PIROP PAB33 rev.9 · 2020 · seção 10.2",
+          "url": "https://3boptic.com/manuales/PIROP_UserManual_PAB33_9_1.pdf",
+          "version": "SRK II 1988; implementação histórica didática",
+          "checkedAt": "2026-10-03",
+          "access": "manufacturer-manual-copy"
+        },
+        "primaryVerification": {
+          "url": "https://3boptic.com/manuales/PIROP_UserManual_PAB33_9_1.pdf",
+          "checked": "Manual do fabricante Echo-Son PIROP, PAB33 revisão 9, março de 2020, página 10-87: cinco faixas de comprimento axial; fator 1,25 quando a potência emetrópica é maior que 14 D e fator 1 nos demais casos. Modelo SRK II de 1988 identificado como histórico e didático.",
+          "access": "manufacturer-manual-copy"
+        }
+      },
+      "editionRecordingScope": "The methodVersion and all previously recorded source access/edition proofs are transcribed unchanged. This technical normalization makes no new bibliographic/full-text/source-formula confirmation; named existing read scopes remain in existingSourceEvidence. A missing standardized container did not mean the method edition was missing.",
+      "publicationEditionConfirmationReevaluated": false,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by technical hashes or metadata normalization; retain existing bounded source arithmetic and clinical review separately.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03",
+        "total": 31,
+        "passed": 31,
+        "evidencePath": "reports/review-20261003/restored-methods-source-rules.json",
+        "scope": "Independent expected values and source-rule boundary checks; not clinical approval.",
+        "sourceRowCount": 31,
+        "uniqueApiInputCount": 28,
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "audit": {
+            "file": "reports/review-20261003/independent-source-corpus-input-identity-audit-final25.json",
+            "sha256": "35d65e84c5608a5f572fce6837f0a8c101b2266f5d6eec32a3d60d2bb6b022ca"
+          },
+          "sourceRows": 31,
+          "uniqueApiInputs": 28,
+          "duplicateRows": 3,
+          "duplicates": [
+            {
+              "first": 11,
+              "repeat": 14,
+              "input": {
+                "a": null,
+                "al": 23.5,
+                "k": 44,
+                "alvo": -1,
+                "contexto": "1"
+              }
+            },
+            {
+              "first": 16,
+              "repeat": 19,
+              "input": {
+                "a": 118.4,
+                "al": null,
+                "k": 44,
+                "alvo": -1,
+                "contexto": "1"
+              }
+            },
+            {
+              "first": 21,
+              "repeat": 24,
+              "input": {
+                "a": 118.4,
+                "al": 23.5,
+                "k": null,
+                "alvo": -1,
+                "contexto": "1"
+              }
+            }
+          ],
+          "coverageStatusUnchanged": true
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "implementationHash": "1e41015f457168115cc002860b8cb52e82de167bd302e8c206df4d94f0f5185f",
+      "implementationHashScope": "Exact current calculator.js bytes, individually verified in three app mirrors. This is not a full dependency-closure hash.",
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-04T17:52:09.841Z",
+          "scope": "First standardized container; explicit existing methodVersion and source proof objects preserved.",
+          "priorStandardizedContainerPresent": false,
+          "priorImplementationVersion": null,
+          "explicitMethodVersion": "SRK II 1988; implementação histórica didática",
+          "sourceEvidenceSha256": "cd855d0d85d89c42e2ced85e7dd5230822cb762675489248434b2c49306ab61a",
+          "metadataAudit": {
+            "file": "reports/review-20261003/native-technical-bindings-audit-publication-final26.json",
+            "sha256": "e615fa3a42555f8fbeb4de8763893c3e981a73eae4c8c1994b33727e19ebd8c8"
+          }
+        }
+      ]
+    },
+    "implementationVersion": "lente-intraocular-srk-ii@native-2026-10-04+1e41015f4571"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "5d4612ce0d78bc16f5211f3aba808d51e07aab04ce7daf74ad37ecfdb5b44dae",
+  "omittedFullReferenceBanks": [
+    {
+      "at": "independentArithmeticTest.cases",
+      "rows": 31,
+      "sha256": "3c9d06de0815ef1c0b9ba2c8bb1596b8e99ca983f8558b903490edc71de0daf1",
+      "reason": "Full independent reference bank omitted from standalone public candidate; original evidence references retained"
+    },
+    {
+      "at": "versionEvidence.independentArithmetic.cases",
+      "rows": 31,
+      "sha256": "3c9d06de0815ef1c0b9ba2c8bb1596b8e99ca983f8558b903490edc71de0daf1",
+      "reason": "Embedded complete independent bank omitted; edition, scope and evidence references retained"
+    }
+  ],
+  "currentSource": {
+    "file": "apps/website/private/tool-code/lente-intraocular-srk-ii/calculator.js",
+    "bytes": 509,
+    "sha256": "1e41015f457168115cc002860b8cb52e82de167bd302e8c206df4d94f0f5185f"
+  },
+  "clinicalValidation": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

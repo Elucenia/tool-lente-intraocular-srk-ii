@@ -1,0 +1,86 @@
+{
+  "schema": "elucenia-publication-base-reference",
+  "checkedAt": "2026-10-05T15:38:24.003Z",
+  "repo": "Elucenia/tool-lente-intraocular-srk-ii",
+  "branch": "main",
+  "commit": "f77c3b28b0955dbac5761da7ed53409444ed37a7",
+  "treeSha": "dcba24e06a64df337570823e22e27a024acb5861",
+  "status": "protected-hashes-unchanged",
+  "protectedFiles": [
+    {
+      "file": "LICENSE",
+      "historicalGitBlobSha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "currentGitBlobSha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "candidateGitBlobSha1": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "candidateSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "same": true
+    },
+    {
+      "file": "NOTICE",
+      "historicalGitBlobSha1": "28dc17c9b85264011934590068bbabd29f0b4c30",
+      "currentGitBlobSha1": "28dc17c9b85264011934590068bbabd29f0b4c30",
+      "candidateGitBlobSha1": "28dc17c9b85264011934590068bbabd29f0b4c30",
+      "candidateSha256": "2c4f7dc10c07683f881a66f3a129e2aad88fcb5e202976e4da63b54f1f747945",
+      "same": true
+    },
+    {
+      "file": "AUTHORSHIP.md",
+      "historicalGitBlobSha1": "3a0342ada2e8e09c13188bd709da06b5e5d3378c",
+      "currentGitBlobSha1": "3a0342ada2e8e09c13188bd709da06b5e5d3378c",
+      "candidateGitBlobSha1": "3a0342ada2e8e09c13188bd709da06b5e5d3378c",
+      "candidateSha256": "c3291c137581852cefdccc7064be07317d05205233339b4326f3b7099416cc1d",
+      "same": true
+    },
+    {
+      "file": "CITATION.cff",
+      "historicalGitBlobSha1": "0b6c0c3b11eb104f5463e4894d7a16e6e2c659d7",
+      "currentGitBlobSha1": "0b6c0c3b11eb104f5463e4894d7a16e6e2c659d7",
+      "candidateGitBlobSha1": "0b6c0c3b11eb104f5463e4894d7a16e6e2c659d7",
+      "candidateSha256": "7dd80d40bd535e2fec6387fa80aa5efa003f97aeec825da67ff9c22e935359d7",
+      "same": true
+    },
+    {
+      "file": "SECURITY.md",
+      "historicalGitBlobSha1": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "currentGitBlobSha1": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "candidateGitBlobSha1": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "candidateSha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e",
+      "same": true
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "historicalGitBlobSha1": "f88d29d95c2b437c4977b616e31797dd7602347e",
+      "currentGitBlobSha1": "f88d29d95c2b437c4977b616e31797dd7602347e",
+      "candidateGitBlobSha1": "f88d29d95c2b437c4977b616e31797dd7602347e",
+      "candidateSha256": "74ea5d374b5beb48563457fe01eea18a6626da312e3a81963356af718c2da257",
+      "same": true
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "historicalGitBlobSha1": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "currentGitBlobSha1": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "candidateGitBlobSha1": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "candidateSha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160",
+      "same": true
+    },
+    {
+      "file": ".gitattributes",
+      "historicalGitBlobSha1": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "currentGitBlobSha1": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "candidateGitBlobSha1": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "candidateSha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+      "same": true
+    },
+    {
+      "file": ".gitignore",
+      "historicalGitBlobSha1": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "currentGitBlobSha1": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "candidateGitBlobSha1": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "candidateSha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8",
+      "same": true
+    }
+  ],
+  "sourceReceiptSha256": "afde2d1f95a20293350a160c2edfbbb80c4c8a740fbb8c2ad29790c83e17a082",
+  "newProtectedFilesAreFirstAddition": false,
+  "publicationPerformed": false
+}

@@ -1,88 +1,426 @@
 [
   {
-    "label": "A 118,4, L 23,5 mm, K 44 D, emetropia: 118,4 − 58,75 − 39,6 = 20,05 D",
+    "id": "lente-intraocular-srk-ii",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Vetor sintético principal de referência",
+    "originalInput": {
+      "a": 118.4,
+      "al": 23.5,
+      "k": 44,
+      "alvo": -1,
+      "contexto": "1"
+    },
     "input": {
       "a": 118.4,
       "al": 23.5,
-      "k": 44
+      "k": 44,
+      "alvo": -1,
+      "contexto": "1"
     },
+    "amendments": [],
     "expected": {
       "raw": {
         "pe": 20.05,
-        "p": 20.05,
-        "adj": 0
+        "p": 21.3,
+        "adj": 0,
+        "factor": 1.25
       },
-      "level": "info"
+      "main": "21,30",
+      "tol": 1e-9
     },
-    "originalInput": {
-      "a": 118.4,
-      "al": 23.5,
-      "k": 44
+    "recordedResult": {
+      "main": [
+        "21,30",
+        "D"
+      ],
+      "label": "SRK II 1988 · modelo histórico",
+      "raw": {
+        "pe": 20.050000000000004,
+        "p": 21.300000000000004,
+        "adj": 0,
+        "factor": 1.25
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Mesmo olho, alvo −0,50 D: 20,05 + 1,25 × 0,5 = 20,68 D",
-    "input": {
+    "id": "lente-intraocular-srk-ii",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Faixaaxial19.99",
+    "originalInput": {
       "a": 118.4,
-      "al": 23.5,
+      "al": 19.99,
       "k": 44,
-      "alvo": -0.5
+      "alvo": 0,
+      "contexto": "1"
     },
-    "expected": {
-      "raw": {
-        "p": 20.675
-      }
-    },
-    "originalInput": {
+    "input": {
       "a": 118.4,
-      "al": 23.5,
+      "al": 19.99,
       "k": 44,
-      "alvo": -0.5
+      "alvo": 0,
+      "contexto": "1"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Olho curto: L 21,5 mm (+1), K 45: 119,4 − 53,75 − 40,5 = 25,15 D",
-    "input": {
-      "a": 118.4,
-      "al": 21.5,
-      "k": 45
-    },
+    "amendments": [],
     "expected": {
       "raw": {
-        "pe": 25.15,
-        "adj": 1
+        "adj": 3,
+        "pe": 31.825,
+        "p": 31.825,
+        "factor": 1.25
+      },
+      "tol": 1e-9
+    },
+    "recordedResult": {
+      "main": [
+        "31,83",
+        "D"
+      ],
+      "label": "SRK II 1988 · modelo histórico",
+      "raw": {
+        "pe": 31.82500000000001,
+        "p": 31.82500000000001,
+        "adj": 3,
+        "factor": 1.25
       }
     },
-    "originalInput": {
-      "a": 118.4,
-      "al": 21.5,
-      "k": 45
-    },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Olho longo: L 28 mm (−0,5), K 42, alvo −0,50: 10,1 D; fator 1,0 (≤ 14 D) → 10,6 D",
-    "input": {
-      "a": 118.4,
-      "al": 28,
-      "k": 42,
-      "alvo": -0.5
-    },
-    "expected": {
-      "raw": {
-        "pe": 10.1,
-        "p": 10.6,
-        "adj": -0.5
-      }
-    },
+    "id": "lente-intraocular-srk-ii",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Faixaaxial20",
     "originalInput": {
       "a": 118.4,
-      "al": 28,
-      "k": 42,
-      "alvo": -0.5
+      "al": 20,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
     },
-    "expandedZeroOptions": []
+    "input": {
+      "a": 118.4,
+      "al": 20,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "adj": 2,
+        "pe": 30.8,
+        "p": 30.8,
+        "factor": 1.25
+      },
+      "tol": 1e-9
+    },
+    "recordedResult": {
+      "main": [
+        "30,80",
+        "D"
+      ],
+      "label": "SRK II 1988 · modelo histórico",
+      "raw": {
+        "pe": 30.800000000000004,
+        "p": 30.800000000000004,
+        "adj": 2,
+        "factor": 1.25
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "lente-intraocular-srk-ii",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Faixaaxial21",
+    "originalInput": {
+      "a": 118.4,
+      "al": 21,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
+    },
+    "input": {
+      "a": 118.4,
+      "al": 21,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "adj": 1,
+        "pe": 27.3,
+        "p": 27.3,
+        "factor": 1.25
+      },
+      "tol": 1e-9
+    },
+    "recordedResult": {
+      "main": [
+        "27,30",
+        "D"
+      ],
+      "label": "SRK II 1988 · modelo histórico",
+      "raw": {
+        "pe": 27.300000000000004,
+        "p": 27.300000000000004,
+        "adj": 1,
+        "factor": 1.25
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "lente-intraocular-srk-ii",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Faixaaxial22",
+    "originalInput": {
+      "a": 118.4,
+      "al": 22,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
+    },
+    "input": {
+      "a": 118.4,
+      "al": 22,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "adj": 0,
+        "pe": 23.8,
+        "p": 23.8,
+        "factor": 1.25
+      },
+      "tol": 1e-9
+    },
+    "recordedResult": {
+      "main": [
+        "23,80",
+        "D"
+      ],
+      "label": "SRK II 1988 · modelo histórico",
+      "raw": {
+        "pe": 23.800000000000004,
+        "p": 23.800000000000004,
+        "adj": 0,
+        "factor": 1.25
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "lente-intraocular-srk-ii",
+    "kind": "native-source-reference",
+    "index": 5,
+    "name": "Faixaaxial24.5",
+    "originalInput": {
+      "a": 118.4,
+      "al": 24.5,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
+    },
+    "input": {
+      "a": 118.4,
+      "al": 24.5,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "adj": -0.5,
+        "pe": 17.05,
+        "p": 17.05,
+        "factor": 1.25
+      },
+      "tol": 1e-9
+    },
+    "recordedResult": {
+      "main": [
+        "17,05",
+        "D"
+      ],
+      "label": "SRK II 1988 · modelo histórico",
+      "raw": {
+        "pe": 17.050000000000004,
+        "p": 17.050000000000004,
+        "adj": -0.5,
+        "factor": 1.25
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "lente-intraocular-srk-ii",
+    "kind": "native-source-reference",
+    "index": 6,
+    "name": "Exemplo estudo1992 olho longo29/constante116,8",
+    "originalInput": {
+      "a": 116.8,
+      "al": 29,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
+    },
+    "input": {
+      "a": 116.8,
+      "al": 29,
+      "k": 44,
+      "alvo": 0,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "adj": -0.5,
+        "pe": 4.2,
+        "p": 4.2,
+        "factor": 1
+      },
+      "main": "4,20",
+      "tol": 1e-9
+    },
+    "recordedResult": {
+      "main": [
+        "4,20",
+        "D"
+      ],
+      "label": "SRK II 1988 · modelo histórico",
+      "raw": {
+        "pe": 4.199999999999996,
+        "p": 4.199999999999996,
+        "adj": -0.5,
+        "factor": 1
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "lente-intraocular-srk-ii",
+    "kind": "native-source-reference",
+    "index": 7,
+    "name": "P de 18 D usa fator 1,25",
+    "originalInput": {
+      "a": 114,
+      "al": 24,
+      "k": 40,
+      "alvo": -2,
+      "contexto": "1"
+    },
+    "input": {
+      "a": 114,
+      "al": 24,
+      "k": 40,
+      "alvo": -2,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "adj": 0,
+        "pe": 18,
+        "p": 20.5,
+        "factor": 1.25
+      },
+      "tol": 1e-9
+    },
+    "recordedResult": {
+      "main": [
+        "20,50",
+        "D"
+      ],
+      "label": "SRK II 1988 · modelo histórico",
+      "raw": {
+        "pe": 18,
+        "p": 20.5,
+        "adj": 0,
+        "factor": 1.25
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "lente-intraocular-srk-ii",
+    "kind": "native-source-reference",
+    "index": 8,
+    "name": "Pexatamente14 usa fator1 (A110, L24, K40)",
+    "originalInput": {
+      "a": 110,
+      "al": 24,
+      "k": 40,
+      "alvo": -2,
+      "contexto": "1"
+    },
+    "input": {
+      "a": 110,
+      "al": 24,
+      "k": 40,
+      "alvo": -2,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "pe": 14,
+        "p": 16,
+        "factor": 1
+      },
+      "main": "16,00"
+    },
+    "recordedResult": {
+      "main": [
+        "16,00",
+        "D"
+      ],
+      "label": "SRK II 1988 · modelo histórico",
+      "raw": {
+        "pe": 14,
+        "p": 16,
+        "adj": 0,
+        "factor": 1
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   }
 ]

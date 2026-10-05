@@ -1,0 +1,2337 @@
+{
+  "receipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "build": {
+    "id": "RYDdJbZxqrM8sgoyKEQc-",
+    "standaloneServer": {
+      "file": "reports/review-20261005-completion/deploy-lock/r5-isolated-runtime/.next/standalone/server.js",
+      "sha256": "631d43264038e7aa367b5405041eb3706d73fd3366925a7ef17a07119cfa166e",
+      "bytes": 10457
+    },
+    "catalogPin": {
+      "file": "deliveries/elucenia-next-hostinger-r5/.next/server/pages/en/tools.json",
+      "sha256": "33917dfdae9bea59cae22bfca34eaef2a21046a832af98c1a8d2718075de63ec",
+      "bytes": 103793
+    }
+  },
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r5 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "tool": {
+    "id": "lente-intraocular-srk-ii",
+    "title": "SRK II: modelo histórico didático",
+    "methodVersion": "SRK II 1988; implementação histórica didática",
+    "implementationVersion": "lente-intraocular-srk-ii@native-2026-10-04+1e41015f4571",
+    "sources": [
+      [
+        "Echo-Son · manual PIROP PAB33 rev.9 · 2020 · seção 10.2",
+        "https://3boptic.com/manuales/PIROP_UserManual_PAB33_9_1.pdf"
+      ],
+      [
+        "Sanders DR, Retzlaff J, Kraff MC. Comparison of the SRK II formula and other second generation formulas. J Cataract Refract Surg, 1988.",
+        "https://doi.org/10.1016/S0886-3350(88)80087-7"
+      ]
+    ],
+    "limits": "Modelo histórico com precisão limitada, especialmente em olhos curtos e longos. Não integra biometria ou constantes otimizadas modernas e não seleciona uma lente para cirurgia.",
+    "sourceEditionEvidence": [
+      {
+        "citation": "Echo-Son · manual PIROP PAB33 rev.9 · 2020 · seção 10.2",
+        "url": "https://3boptic.com/manuales/PIROP_UserManual_PAB33_9_1.pdf",
+        "class": "existing-source-record-transcribed",
+        "declaredCitationPreserved": true,
+        "sourceIdentityRecheckedInThisNormalization": false,
+        "publicationEditionConfirmationInThisNormalization": "not-performed",
+        "fullTextRetrievalInThisNormalization": false,
+        "formulaConformance": "not-assessed"
+      },
+      {
+        "citation": "Sanders DR, Retzlaff J, Kraff MC. Comparison of the SRK II formula and other second generation formulas. J Cataract Refract Surg, 1988.",
+        "url": "https://doi.org/10.1016/S0886-3350(88)80087-7",
+        "class": "existing-source-record-transcribed",
+        "declaredCitationPreserved": true,
+        "sourceIdentityRecheckedInThisNormalization": false,
+        "publicationEditionConfirmationInThisNormalization": "not-performed",
+        "fullTextRetrievalInThisNormalization": false,
+        "formulaConformance": "not-assessed"
+      }
+    ],
+    "calculator": {
+      "file": "deliveries/elucenia-next-hostinger-r5/private/tool-code/lente-intraocular-srk-ii/calculator.js",
+      "sha256": "1e41015f457168115cc002860b8cb52e82de167bd302e8c206df4d94f0f5185f",
+      "bytes": 509
+    },
+    "cases": 9,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "replayed": 9,
+    "passed": 9,
+    "failed": 0,
+    "status": "passed"
+  },
+  "results": [
+    {
+      "id": "lente-intraocular-srk-ii",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Vetor sintético principal de referência",
+      "originalInput": {
+        "a": 118.4,
+        "al": 23.5,
+        "k": 44,
+        "alvo": -1,
+        "contexto": "1"
+      },
+      "input": {
+        "a": 118.4,
+        "al": 23.5,
+        "k": 44,
+        "alvo": -1,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pe": 20.05,
+          "p": 21.3,
+          "adj": 0,
+          "factor": 1.25
+        },
+        "main": "21,30",
+        "tol": 1e-9
+      },
+      "recordedResult": {
+        "main": [
+          "21,30",
+          "D"
+        ],
+        "label": "SRK II 1988 · modelo histórico",
+        "raw": {
+          "pe": 20.050000000000004,
+          "p": 21.300000000000004,
+          "adj": 0,
+          "factor": 1.25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "a": 118.4,
+            "al": 23.5,
+            "k": 44,
+            "alvo": -1,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+          "startedAt": "2026-10-05T15:14:59.181Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "lente-intraocular-srk-ii",
+              "main": [
+                "21,30",
+                "D"
+              ],
+              "label": "SRK II 1988 · modelo histórico",
+              "raw": {
+                "pe": 20.050000000000004,
+                "p": 21.300000000000004,
+                "adj": 0,
+                "factor": 1.25
+              },
+              "methodVersion": "SRK II 1988; implementação histórica didática",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6fd4509224d550d327eb49e9b8baa4d9c8ae5b7f46a3408f0bbefec0a4bf5a01",
+          "bytes": 290,
+          "elapsedMs": 8.55350000000908
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "startedAt": "2026-10-05T15:14:59.181Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "lente-intraocular-srk-ii",
+            "main": [
+              "21,30",
+              "D"
+            ],
+            "label": "SRK II 1988 · modelo histórico",
+            "raw": {
+              "pe": 20.050000000000004,
+              "p": 21.300000000000004,
+              "adj": 0,
+              "factor": 1.25
+            },
+            "methodVersion": "SRK II 1988; implementação histórica didática",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6fd4509224d550d327eb49e9b8baa4d9c8ae5b7f46a3408f0bbefec0a4bf5a01",
+        "bytes": 290,
+        "elapsedMs": 8.55350000000908
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "21,30",
+            "obtained": "21,30",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pe",
+            "expected": 20.05,
+            "obtained": 20.050000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 21.3,
+            "obtained": 21.300000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.adj",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pe",
+            "expected": 20.050000000000004,
+            "obtained": 20.050000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 21.300000000000004,
+            "obtained": 21.300000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.adj",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "21,30",
+            "obtained": "21,30",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "D",
+            "obtained": "D",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "lente-intraocular-srk-ii",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Faixaaxial19.99",
+      "originalInput": {
+        "a": 118.4,
+        "al": 19.99,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "input": {
+        "a": 118.4,
+        "al": 19.99,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "adj": 3,
+          "pe": 31.825,
+          "p": 31.825,
+          "factor": 1.25
+        },
+        "tol": 1e-9
+      },
+      "recordedResult": {
+        "main": [
+          "31,83",
+          "D"
+        ],
+        "label": "SRK II 1988 · modelo histórico",
+        "raw": {
+          "pe": 31.82500000000001,
+          "p": 31.82500000000001,
+          "adj": 3,
+          "factor": 1.25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "a": 118.4,
+            "al": 19.99,
+            "k": 44,
+            "alvo": 0,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+          "startedAt": "2026-10-05T15:14:59.492Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "lente-intraocular-srk-ii",
+              "main": [
+                "31,83",
+                "D"
+              ],
+              "label": "SRK II 1988 · modelo histórico",
+              "raw": {
+                "pe": 31.82500000000001,
+                "p": 31.82500000000001,
+                "adj": 3,
+                "factor": 1.25
+              },
+              "methodVersion": "SRK II 1988; implementação histórica didática",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6af1eea36f84b9606f134ce08674598a4cab25c7c2bac3d43f84692fa1b17916",
+          "bytes": 288,
+          "elapsedMs": 5.154399999999441
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "startedAt": "2026-10-05T15:14:59.492Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "lente-intraocular-srk-ii",
+            "main": [
+              "31,83",
+              "D"
+            ],
+            "label": "SRK II 1988 · modelo histórico",
+            "raw": {
+              "pe": 31.82500000000001,
+              "p": 31.82500000000001,
+              "adj": 3,
+              "factor": 1.25
+            },
+            "methodVersion": "SRK II 1988; implementação histórica didática",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6af1eea36f84b9606f134ce08674598a4cab25c7c2bac3d43f84692fa1b17916",
+        "bytes": 288,
+        "elapsedMs": 5.154399999999441
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.adj",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pe",
+            "expected": 31.825,
+            "obtained": 31.82500000000001,
+            "tolerance": 1e-9,
+            "difference": 1.0658141036401503e-14,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 31.825,
+            "obtained": 31.82500000000001,
+            "tolerance": 1e-9,
+            "difference": 1.0658141036401503e-14,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pe",
+            "expected": 31.82500000000001,
+            "obtained": 31.82500000000001,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 31.82500000000001,
+            "obtained": 31.82500000000001,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.adj",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "31,83",
+            "obtained": "31,83",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "D",
+            "obtained": "D",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "lente-intraocular-srk-ii",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Faixaaxial20",
+      "originalInput": {
+        "a": 118.4,
+        "al": 20,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "input": {
+        "a": 118.4,
+        "al": 20,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "adj": 2,
+          "pe": 30.8,
+          "p": 30.8,
+          "factor": 1.25
+        },
+        "tol": 1e-9
+      },
+      "recordedResult": {
+        "main": [
+          "30,80",
+          "D"
+        ],
+        "label": "SRK II 1988 · modelo histórico",
+        "raw": {
+          "pe": 30.800000000000004,
+          "p": 30.800000000000004,
+          "adj": 2,
+          "factor": 1.25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "a": 118.4,
+            "al": 20,
+            "k": 44,
+            "alvo": 0,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+          "startedAt": "2026-10-05T15:14:59.805Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "lente-intraocular-srk-ii",
+              "main": [
+                "30,80",
+                "D"
+              ],
+              "label": "SRK II 1988 · modelo histórico",
+              "raw": {
+                "pe": 30.800000000000004,
+                "p": 30.800000000000004,
+                "adj": 2,
+                "factor": 1.25
+              },
+              "methodVersion": "SRK II 1988; implementação histórica didática",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "b8eb705e8544974de58a2d016a740fc9828e45e95e39487e4837c5b783f45cf8",
+          "bytes": 290,
+          "elapsedMs": 5.96119999999064
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "startedAt": "2026-10-05T15:14:59.805Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "lente-intraocular-srk-ii",
+            "main": [
+              "30,80",
+              "D"
+            ],
+            "label": "SRK II 1988 · modelo histórico",
+            "raw": {
+              "pe": 30.800000000000004,
+              "p": 30.800000000000004,
+              "adj": 2,
+              "factor": 1.25
+            },
+            "methodVersion": "SRK II 1988; implementação histórica didática",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "b8eb705e8544974de58a2d016a740fc9828e45e95e39487e4837c5b783f45cf8",
+        "bytes": 290,
+        "elapsedMs": 5.96119999999064
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.adj",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pe",
+            "expected": 30.8,
+            "obtained": 30.800000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 30.8,
+            "obtained": 30.800000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pe",
+            "expected": 30.800000000000004,
+            "obtained": 30.800000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 30.800000000000004,
+            "obtained": 30.800000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.adj",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "30,80",
+            "obtained": "30,80",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "D",
+            "obtained": "D",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "lente-intraocular-srk-ii",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Faixaaxial21",
+      "originalInput": {
+        "a": 118.4,
+        "al": 21,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "input": {
+        "a": 118.4,
+        "al": 21,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "adj": 1,
+          "pe": 27.3,
+          "p": 27.3,
+          "factor": 1.25
+        },
+        "tol": 1e-9
+      },
+      "recordedResult": {
+        "main": [
+          "27,30",
+          "D"
+        ],
+        "label": "SRK II 1988 · modelo histórico",
+        "raw": {
+          "pe": 27.300000000000004,
+          "p": 27.300000000000004,
+          "adj": 1,
+          "factor": 1.25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "a": 118.4,
+            "al": 21,
+            "k": 44,
+            "alvo": 0,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+          "startedAt": "2026-10-05T15:15:00.116Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "lente-intraocular-srk-ii",
+              "main": [
+                "27,30",
+                "D"
+              ],
+              "label": "SRK II 1988 · modelo histórico",
+              "raw": {
+                "pe": 27.300000000000004,
+                "p": 27.300000000000004,
+                "adj": 1,
+                "factor": 1.25
+              },
+              "methodVersion": "SRK II 1988; implementação histórica didática",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "a466afd365edf9a0f2520955b7ff88b4c58a69492385d9ba68df19ed09892bec",
+          "bytes": 290,
+          "elapsedMs": 7.793099999980768
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "startedAt": "2026-10-05T15:15:00.116Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "lente-intraocular-srk-ii",
+            "main": [
+              "27,30",
+              "D"
+            ],
+            "label": "SRK II 1988 · modelo histórico",
+            "raw": {
+              "pe": 27.300000000000004,
+              "p": 27.300000000000004,
+              "adj": 1,
+              "factor": 1.25
+            },
+            "methodVersion": "SRK II 1988; implementação histórica didática",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "a466afd365edf9a0f2520955b7ff88b4c58a69492385d9ba68df19ed09892bec",
+        "bytes": 290,
+        "elapsedMs": 7.793099999980768
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.adj",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pe",
+            "expected": 27.3,
+            "obtained": 27.300000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 27.3,
+            "obtained": 27.300000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pe",
+            "expected": 27.300000000000004,
+            "obtained": 27.300000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 27.300000000000004,
+            "obtained": 27.300000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.adj",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "27,30",
+            "obtained": "27,30",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "D",
+            "obtained": "D",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "lente-intraocular-srk-ii",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Faixaaxial22",
+      "originalInput": {
+        "a": 118.4,
+        "al": 22,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "input": {
+        "a": 118.4,
+        "al": 22,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "adj": 0,
+          "pe": 23.8,
+          "p": 23.8,
+          "factor": 1.25
+        },
+        "tol": 1e-9
+      },
+      "recordedResult": {
+        "main": [
+          "23,80",
+          "D"
+        ],
+        "label": "SRK II 1988 · modelo histórico",
+        "raw": {
+          "pe": 23.800000000000004,
+          "p": 23.800000000000004,
+          "adj": 0,
+          "factor": 1.25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "a": 118.4,
+            "al": 22,
+            "k": 44,
+            "alvo": 0,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+          "startedAt": "2026-10-05T15:15:00.429Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "lente-intraocular-srk-ii",
+              "main": [
+                "23,80",
+                "D"
+              ],
+              "label": "SRK II 1988 · modelo histórico",
+              "raw": {
+                "pe": 23.800000000000004,
+                "p": 23.800000000000004,
+                "adj": 0,
+                "factor": 1.25
+              },
+              "methodVersion": "SRK II 1988; implementação histórica didática",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "7666553cc0a3ad4a557b0a86fff7a3f930f42f44b313736a7b4535a491f5a726",
+          "bytes": 290,
+          "elapsedMs": 2.7102000000013504
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "startedAt": "2026-10-05T15:15:00.429Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "lente-intraocular-srk-ii",
+            "main": [
+              "23,80",
+              "D"
+            ],
+            "label": "SRK II 1988 · modelo histórico",
+            "raw": {
+              "pe": 23.800000000000004,
+              "p": 23.800000000000004,
+              "adj": 0,
+              "factor": 1.25
+            },
+            "methodVersion": "SRK II 1988; implementação histórica didática",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "7666553cc0a3ad4a557b0a86fff7a3f930f42f44b313736a7b4535a491f5a726",
+        "bytes": 290,
+        "elapsedMs": 2.7102000000013504
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.adj",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pe",
+            "expected": 23.8,
+            "obtained": 23.800000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 23.8,
+            "obtained": 23.800000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pe",
+            "expected": 23.800000000000004,
+            "obtained": 23.800000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 23.800000000000004,
+            "obtained": 23.800000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.adj",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "23,80",
+            "obtained": "23,80",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "D",
+            "obtained": "D",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "lente-intraocular-srk-ii",
+      "kind": "native-source-reference",
+      "index": 5,
+      "name": "Faixaaxial24.5",
+      "originalInput": {
+        "a": 118.4,
+        "al": 24.5,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "input": {
+        "a": 118.4,
+        "al": 24.5,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "adj": -0.5,
+          "pe": 17.05,
+          "p": 17.05,
+          "factor": 1.25
+        },
+        "tol": 1e-9
+      },
+      "recordedResult": {
+        "main": [
+          "17,05",
+          "D"
+        ],
+        "label": "SRK II 1988 · modelo histórico",
+        "raw": {
+          "pe": 17.050000000000004,
+          "p": 17.050000000000004,
+          "adj": -0.5,
+          "factor": 1.25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "a": 118.4,
+            "al": 24.5,
+            "k": 44,
+            "alvo": 0,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+          "startedAt": "2026-10-05T15:15:00.743Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "lente-intraocular-srk-ii",
+              "main": [
+                "17,05",
+                "D"
+              ],
+              "label": "SRK II 1988 · modelo histórico",
+              "raw": {
+                "pe": 17.050000000000004,
+                "p": 17.050000000000004,
+                "adj": -0.5,
+                "factor": 1.25
+              },
+              "methodVersion": "SRK II 1988; implementação histórica didática",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "674c859ef52dd22ec99c3032265d3e216cbe0dd56c9b87f50b0ce2c020a57b17",
+          "bytes": 293,
+          "elapsedMs": 2.8052000000025146
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "startedAt": "2026-10-05T15:15:00.743Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "lente-intraocular-srk-ii",
+            "main": [
+              "17,05",
+              "D"
+            ],
+            "label": "SRK II 1988 · modelo histórico",
+            "raw": {
+              "pe": 17.050000000000004,
+              "p": 17.050000000000004,
+              "adj": -0.5,
+              "factor": 1.25
+            },
+            "methodVersion": "SRK II 1988; implementação histórica didática",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "674c859ef52dd22ec99c3032265d3e216cbe0dd56c9b87f50b0ce2c020a57b17",
+        "bytes": 293,
+        "elapsedMs": 2.8052000000025146
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.adj",
+            "expected": -0.5,
+            "obtained": -0.5,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pe",
+            "expected": 17.05,
+            "obtained": 17.050000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 17.05,
+            "obtained": 17.050000000000004,
+            "tolerance": 1e-9,
+            "difference": 3.552713678800501e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pe",
+            "expected": 17.050000000000004,
+            "obtained": 17.050000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 17.050000000000004,
+            "obtained": 17.050000000000004,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.adj",
+            "expected": -0.5,
+            "obtained": -0.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "17,05",
+            "obtained": "17,05",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "D",
+            "obtained": "D",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "lente-intraocular-srk-ii",
+      "kind": "native-source-reference",
+      "index": 6,
+      "name": "Exemplo estudo1992 olho longo29/constante116,8",
+      "originalInput": {
+        "a": 116.8,
+        "al": 29,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "input": {
+        "a": 116.8,
+        "al": 29,
+        "k": 44,
+        "alvo": 0,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "adj": -0.5,
+          "pe": 4.2,
+          "p": 4.2,
+          "factor": 1
+        },
+        "main": "4,20",
+        "tol": 1e-9
+      },
+      "recordedResult": {
+        "main": [
+          "4,20",
+          "D"
+        ],
+        "label": "SRK II 1988 · modelo histórico",
+        "raw": {
+          "pe": 4.199999999999996,
+          "p": 4.199999999999996,
+          "adj": -0.5,
+          "factor": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "a": 116.8,
+            "al": 29,
+            "k": 44,
+            "alvo": 0,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+          "startedAt": "2026-10-05T15:15:01.055Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "lente-intraocular-srk-ii",
+              "main": [
+                "4,20",
+                "D"
+              ],
+              "label": "SRK II 1988 · modelo histórico",
+              "raw": {
+                "pe": 4.199999999999996,
+                "p": 4.199999999999996,
+                "adj": -0.5,
+                "factor": 1
+              },
+              "methodVersion": "SRK II 1988; implementação histórica didática",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "0df632385b93bd3607c11fbbb1ab316054e120e75976a7d1d01300b2741adb09",
+          "bytes": 287,
+          "elapsedMs": 6.779599999979837
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "startedAt": "2026-10-05T15:15:01.055Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "lente-intraocular-srk-ii",
+            "main": [
+              "4,20",
+              "D"
+            ],
+            "label": "SRK II 1988 · modelo histórico",
+            "raw": {
+              "pe": 4.199999999999996,
+              "p": 4.199999999999996,
+              "adj": -0.5,
+              "factor": 1
+            },
+            "methodVersion": "SRK II 1988; implementação histórica didática",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "0df632385b93bd3607c11fbbb1ab316054e120e75976a7d1d01300b2741adb09",
+        "bytes": 287,
+        "elapsedMs": 6.779599999979837
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "4,20",
+            "obtained": "4,20",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.adj",
+            "expected": -0.5,
+            "obtained": -0.5,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pe",
+            "expected": 4.2,
+            "obtained": 4.199999999999996,
+            "tolerance": 1e-9,
+            "difference": 4.440892098500626e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 4.2,
+            "obtained": 4.199999999999996,
+            "tolerance": 1e-9,
+            "difference": 4.440892098500626e-15,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.factor",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pe",
+            "expected": 4.199999999999996,
+            "obtained": 4.199999999999996,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 4.199999999999996,
+            "obtained": 4.199999999999996,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.adj",
+            "expected": -0.5,
+            "obtained": -0.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.factor",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "4,20",
+            "obtained": "4,20",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "D",
+            "obtained": "D",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "lente-intraocular-srk-ii",
+      "kind": "native-source-reference",
+      "index": 7,
+      "name": "P de 18 D usa fator 1,25",
+      "originalInput": {
+        "a": 114,
+        "al": 24,
+        "k": 40,
+        "alvo": -2,
+        "contexto": "1"
+      },
+      "input": {
+        "a": 114,
+        "al": 24,
+        "k": 40,
+        "alvo": -2,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "adj": 0,
+          "pe": 18,
+          "p": 20.5,
+          "factor": 1.25
+        },
+        "tol": 1e-9
+      },
+      "recordedResult": {
+        "main": [
+          "20,50",
+          "D"
+        ],
+        "label": "SRK II 1988 · modelo histórico",
+        "raw": {
+          "pe": 18,
+          "p": 20.5,
+          "adj": 0,
+          "factor": 1.25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "a": 114,
+            "al": 24,
+            "k": 40,
+            "alvo": -2,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+          "startedAt": "2026-10-05T15:15:01.370Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "lente-intraocular-srk-ii",
+              "main": [
+                "20,50",
+                "D"
+              ],
+              "label": "SRK II 1988 · modelo histórico",
+              "raw": {
+                "pe": 18,
+                "p": 20.5,
+                "adj": 0,
+                "factor": 1.25
+              },
+              "methodVersion": "SRK II 1988; implementação histórica didática",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "10ff206379742e612e98aa382bee13fa3fbc88a5de8002a1c5c945429771438f",
+          "bytes": 260,
+          "elapsedMs": 5.895799999998417
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "startedAt": "2026-10-05T15:15:01.370Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "lente-intraocular-srk-ii",
+            "main": [
+              "20,50",
+              "D"
+            ],
+            "label": "SRK II 1988 · modelo histórico",
+            "raw": {
+              "pe": 18,
+              "p": 20.5,
+              "adj": 0,
+              "factor": 1.25
+            },
+            "methodVersion": "SRK II 1988; implementação histórica didática",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "10ff206379742e612e98aa382bee13fa3fbc88a5de8002a1c5c945429771438f",
+        "bytes": 260,
+        "elapsedMs": 5.895799999998417
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.adj",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pe",
+            "expected": 18,
+            "obtained": 18,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 20.5,
+            "obtained": 20.5,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-9,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pe",
+            "expected": 18,
+            "obtained": 18,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 20.5,
+            "obtained": 20.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.adj",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.factor",
+            "expected": 1.25,
+            "obtained": 1.25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "20,50",
+            "obtained": "20,50",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "D",
+            "obtained": "D",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "lente-intraocular-srk-ii",
+      "kind": "native-source-reference",
+      "index": 8,
+      "name": "Pexatamente14 usa fator1 (A110, L24, K40)",
+      "originalInput": {
+        "a": 110,
+        "al": 24,
+        "k": 40,
+        "alvo": -2,
+        "contexto": "1"
+      },
+      "input": {
+        "a": 110,
+        "al": 24,
+        "k": 40,
+        "alvo": -2,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "pe": 14,
+          "p": 16,
+          "factor": 1
+        },
+        "main": "16,00"
+      },
+      "recordedResult": {
+        "main": [
+          "16,00",
+          "D"
+        ],
+        "label": "SRK II 1988 · modelo histórico",
+        "raw": {
+          "pe": 14,
+          "p": 16,
+          "adj": 0,
+          "factor": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "a": 110,
+            "al": 24,
+            "k": 40,
+            "alvo": -2,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+          "startedAt": "2026-10-05T15:15:01.685Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "lente-intraocular-srk-ii",
+              "main": [
+                "16,00",
+                "D"
+              ],
+              "label": "SRK II 1988 · modelo histórico",
+              "raw": {
+                "pe": 14,
+                "p": 16,
+                "adj": 0,
+                "factor": 1
+              },
+              "methodVersion": "SRK II 1988; implementação histórica didática",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "630d81ff1fbca601421b6be1d30f3d13eea89467f7a8d7901dee38270ac7e8bf",
+          "bytes": 255,
+          "elapsedMs": 5.756699999998091
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/lente-intraocular-srk-ii/calculate",
+        "startedAt": "2026-10-05T15:15:01.685Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "lente-intraocular-srk-ii",
+            "main": [
+              "16,00",
+              "D"
+            ],
+            "label": "SRK II 1988 · modelo histórico",
+            "raw": {
+              "pe": 14,
+              "p": 16,
+              "adj": 0,
+              "factor": 1
+            },
+            "methodVersion": "SRK II 1988; implementação histórica didática",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "630d81ff1fbca601421b6be1d30f3d13eea89467f7a8d7901dee38270ac7e8bf",
+        "bytes": 255,
+        "elapsedMs": 5.756699999998091
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "16,00",
+            "obtained": "16,00",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.pe",
+            "expected": 14,
+            "obtained": 14,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.p",
+            "expected": 16,
+            "obtained": 16,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.factor",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pe",
+            "expected": 14,
+            "obtained": 14,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.p",
+            "expected": 16,
+            "obtained": 16,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.adj",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.factor",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "16,00",
+            "obtained": "16,00",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "D",
+            "obtained": "D",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "endBindings": true
+}

@@ -1,0 +1,270 @@
+{
+  "schema": "elucenia-current-per-tool-local-publication-candidate",
+  "id": "lente-intraocular-srk-ii",
+  "repository": "Elucenia/tool-lente-intraocular-srk-ii",
+  "parentCommitSha": "f77c3b28b0955dbac5761da7ed53409444ed37a7",
+  "baseTreeSha": "dcba24e06a64df337570823e22e27a024acb5861",
+  "protectedFiles": {
+    "LICENSE": {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358,
+      "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    "NOTICE": {
+      "path": "NOTICE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28dc17c9b85264011934590068bbabd29f0b4c30",
+      "size": 1660,
+      "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/28dc17c9b85264011934590068bbabd29f0b4c30"
+    },
+    "AUTHORSHIP.md": {
+      "path": "AUTHORSHIP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a0342ada2e8e09c13188bd709da06b5e5d3378c",
+      "size": 3339,
+      "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/3a0342ada2e8e09c13188bd709da06b5e5d3378c"
+    },
+    "CITATION.cff": {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b6c0c3b11eb104f5463e4894d7a16e6e2c659d7",
+      "size": 947,
+      "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/0b6c0c3b11eb104f5463e4894d7a16e6e2c659d7"
+    },
+    "SECURITY.md": {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "size": 894,
+      "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+    },
+    "CONTRIBUTING.md": {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f88d29d95c2b437c4977b616e31797dd7602347e",
+      "size": 1475,
+      "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/f88d29d95c2b437c4977b616e31797dd7602347e"
+    },
+    ".github/workflows/ci.yml": {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "size": 279,
+      "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+    },
+    ".gitattributes": {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "size": 19,
+      "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+    },
+    ".gitignore": {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "size": 42,
+      "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+    }
+  },
+  "oldCandidate": {
+    "manifest": {
+      "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
+      "bytes": 6823260,
+      "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
+    },
+    "rowId": "lente-intraocular-srk-ii",
+    "publicationProvenance": {
+      "file": "reports/review-20261003/github-publication-candidates-final36-v4/lente-intraocular-srk-ii/publication-provenance.json",
+      "bytes": 5361,
+      "sha256": "6833a6337260f00c8ed7b5ed47d4f4ab808cd734542a56c105461437e744ab3e"
+    },
+    "integrationProvenance": {
+      "file": "reports/review-20261003/github-publication-candidates-final36-v4/lente-intraocular-srk-ii/provenance.json",
+      "bytes": 48180,
+      "sha256": "2d2d4259e66461a0d52a9ab74798403e8c0b54d468beb5886a145ef9e10fa2f9"
+    }
+  },
+  "currentSource": {
+    "file": "apps/website/private/tool-code/lente-intraocular-srk-ii/calculator.js",
+    "bytes": 509,
+    "sha256": "1e41015f457168115cc002860b8cb52e82de167bd302e8c206df4d94f0f5185f"
+  },
+  "sourceToolSha256": "5d4612ce0d78bc16f5211f3aba808d51e07aab04ce7daf74ad37ecfdb5b44dae",
+  "methodVersion": "SRK II 1988; implementação histórica didática",
+  "implementationVersion": "lente-intraocular-srk-ii@native-2026-10-04+1e41015f4571",
+  "browserBundleSha256": "79b301ee4556c9857f821b6708dceaab21fa3e4b1d3bb58ea8498242522b833e",
+  "graph": {
+    "entry": "tool-code/lente-intraocular-srk-ii/calculator.js",
+    "modules": [
+      {
+        "file": "tool-code/lente-intraocular-srk-ii/calculator.js",
+        "bytes": 509,
+        "sha256": "1e41015f457168115cc002860b8cb52e82de167bd302e8c206df4d94f0f5185f"
+      },
+      {
+        "file": "restored-methods.cjs",
+        "bytes": 4552,
+        "sha256": "a15c4f7877a75a76acd6e422c522b2032dbf885a7a0f4f687a2e30ef636c11d2"
+      },
+      {
+        "file": "restoration-original-tools.json",
+        "bytes": 1219,
+        "sha256": "a6e2973b58b3d2ea3bdf9224c5f3f7ca777b2ae0a0010cb2b1ceff9cfe2e9ad9"
+      }
+    ],
+    "transforms": [
+      {
+        "file": "restored-methods.cjs",
+        "sourceSha256": "630dccade18742e4bc364b32f4ef4d6bc75aeceb262face8ddae806be7962c23",
+        "kind": "Deterministic AST selection of one existing define call plus unchanged shared arithmetic/schema helpers",
+        "selectedId": "lente-intraocular-srk-ii",
+        "otherMethodDefinitionsIncluded": 0
+      },
+      {
+        "file": "restoration-original-tools.json",
+        "sourceSha256": "ccee00665e024104d254acf77a43609acb02d593e016ee8c6b7cebf3769da389",
+        "kind": "One original field/source contract only; no other tools, reference banks or original results",
+        "selectedId": "lente-intraocular-srk-ii",
+        "keys": [
+          "id",
+          "title",
+          "fields",
+          "sources"
+        ]
+      }
+    ]
+  },
+  "currentActualHttpEvidence": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "tests": {
+    "cases": 9,
+    "sourceNodeParityPassed": true,
+    "browserVmParityPassed": true,
+    "independentOracleDerived": false,
+    "actualBrowserDOMVerified": false
+  },
+  "rights": {
+    "historicalPayloadLicenseDeclaration": "Apache-2.0",
+    "currentIntegrationPackageLicenseDeclaration": "MIT",
+    "currentLegalFiles": [
+      {
+        "file": "apps/command-center/private/tool-code/lente-intraocular-srk-ii/LICENSE",
+        "bytes": 1229,
+        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
+      },
+      {
+        "file": "apps/command-center/private/tool-code/lente-intraocular-srk-ii/NOTICE.md",
+        "bytes": 1183,
+        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
+      }
+    ],
+    "protectedFilesPreservedFromOldPayload": [],
+    "protectedRemoteAttributionReferences": {
+      "LICENSE": {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      "NOTICE": {
+        "path": "NOTICE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "28dc17c9b85264011934590068bbabd29f0b4c30",
+        "size": 1660,
+        "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/28dc17c9b85264011934590068bbabd29f0b4c30"
+      },
+      "AUTHORSHIP.md": {
+        "path": "AUTHORSHIP.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3a0342ada2e8e09c13188bd709da06b5e5d3378c",
+        "size": 3339,
+        "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/3a0342ada2e8e09c13188bd709da06b5e5d3378c"
+      },
+      "CITATION.cff": {
+        "path": "CITATION.cff",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0b6c0c3b11eb104f5463e4894d7a16e6e2c659d7",
+        "size": 947,
+        "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/0b6c0c3b11eb104f5463e4894d7a16e6e2c659d7"
+      },
+      "SECURITY.md": {
+        "path": "SECURITY.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "size": 894,
+        "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+      },
+      "CONTRIBUTING.md": {
+        "path": "CONTRIBUTING.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f88d29d95c2b437c4977b616e31797dd7602347e",
+        "size": 1475,
+        "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/f88d29d95c2b437c4977b616e31797dd7602347e"
+      },
+      ".github/workflows/ci.yml": {
+        "path": ".github/workflows/ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "size": 279,
+        "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+      },
+      ".gitattributes": {
+        "path": ".gitattributes",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "size": 19,
+        "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+      },
+      ".gitignore": {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "size": 42,
+        "url": "https://api.github.com/repos/Elucenia/tool-lente-intraocular-srk-ii/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+      }
+    },
+    "sourceSpecificEvidence": {
+      "sourceSpecificStatus": "not-approved-by-this-consolidation",
+      "sourceSpecificEvidence": null,
+      "wholeInstrumentApproval": false,
+      "oldCandidateInstrumentRightsApproval": "not-performed"
+    },
+    "scope": "Historical Apache declaration and current MIT integration notices retained with exact sources; no relicensing or instrument approval inferred",
+    "reviewRequired": true,
+    "divergences": [
+      "Historical payload and current package declare different license labels; scope/authorship mapping must be reviewed before distribution"
+    ],
+    "wholeInstrumentApproval": false
+  },
+  "appWrites": false,
+  "externalMutations": false,
+  "publicationPerformed": false,
+  "externalPublicationReady": false,
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
